@@ -43,3 +43,8 @@ Customize the UI appearance to your taste. Adjust the url, page to your taste.
 - Go to Project Settings -> API.
 - Copy URL on Project URL field, Paste on .env -> "VITE_API_URL"
 - Copy Api Key on Project API Keys, Paste on .env -> "VITE_API_KEY"
+
+
+# DEMO
+  * Username : demo
+  * Password : demo
