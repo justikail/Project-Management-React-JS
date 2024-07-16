@@ -1,0 +1,411 @@
+/* ----- POPPINS FONT Link ----- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+/* ----- ICONS COUT ----- */
+@import url("https://unicons.iconscout.com/release/v4.0.8/css/line.css");
+
+/* ----- VARIABLES ----- */
+:root {
+  --body-color: rgb(250, 250, 250);
+  --color-white: rgb(255, 255, 255);
+
+  --text-color-second: rgb(68, 68, 68);
+  --text-color-third: rgb(30, 159, 171);
+
+  --first-color: rgb(110, 87, 224);
+  --first-color-hover: rgb(40, 91, 212);
+
+  --second-color: rgb(0, 201, 255);
+  --third-color: rgb(192, 166, 49);
+  --first-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ----- BASE ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----- SMOOTH SCROLL ----- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 30px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
+}
+
+/* ---##-- REUSABLE CSS --##--- */
+
+/* ----- GLOBAL BUTTON DESIGN ----- */
+.btn {
+  font-weight: 500;
+  padding: 12px 20px;
+  background: #efefef;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.btn > i {
+  margin-left: 10px;
+}
+.btn:hover {
+  background: var(--second-color);
+  color: var(--color-white);
+}
+
+/* ----- GLOBAL ICONS DESIGN ----- */
+i {
+  font-size: 16px;
+}
+
+/* ------- BASE -------- */
+body {
+  background: linear-gradient(135deg, #101010, #434343);
+}
+.container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ----- NOTFOUND ----- */
+.container-notfound {
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.page404 {
+  width: 400px;
+  height: auto;
+}
+#tree {
+  stroke: #59513c;
+}
+#wood-stump {
+  stroke: #59513c;
+  -webkit-animation: wood-stump 3s infinite ease-in-out;
+  -moz-animation: wood-stump 3s infinite ease-in-out;
+  -o-animation: wood-stump 3s infinite ease-in-out;
+  animation: wood-stump 3s infinite ease-in-out;
+}
+@-webkit-keyframes wood-stump {
+  0% {
+    -webkit-transform: translate(100px);
+  }
+  50% {
+    -webkit-transform: translate(50px);
+  }
+  100% {
+    -webkit-transform: translate(100px);
+  }
+}
+@-moz-keyframes wood-stump {
+  0% {
+    -moz-transform: translate(100px);
+  }
+  50% {
+    -moz-transform: translate(50px);
+  }
+  100% {
+    -moz-transform: translate(100px);
+  }
+}
+@-o-keyframes wood-stump {
+  0% {
+    -o-transform: translate(100px);
+  }
+  50% {
+    -o-transform: translate(50px);
+  }
+  100% {
+    -o-transform: translate(100px);
+  }
+}
+@keyframes wood-stump {
+  0% {
+    -webkit-transform: translate(100px);
+    -moz-transform: translate(100px);
+    -ms-transform: translate(100px);
+    transform: translate(100px);
+  }
+  50% {
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    -ms-transform: translate(0px);
+    transform: translate(0px);
+  }
+  100% {
+    -webkit-transform: translate(100px);
+    -moz-transform: translate(100px);
+    -ms-transform: translate(100px);
+    transform: translate(100px);
+  }
+}
+#leaf {
+  stroke: #59513c;
+  -webkit-animation: leaf 7s infinite ease-in-out;
+  -moz-animation: leaf 7s infinite ease-in-out;
+  -o-animation: leaf 7s infinite ease-in-out;
+  animation: leaf 7s infinite ease-in-out;
+}
+@-webkit-keyframes leaf {
+  0% {
+    -webkit-transform: translate(0, 70px);
+  }
+  50% {
+    -webkit-transform: translate(0, 50px);
+  }
+  100% {
+    -webkit-transform: translate(0, 70px);
+  }
+}
+@-moz-keyframes leaf {
+  0% {
+    -moz-transform: translate(0, 70px);
+  }
+  50% {
+    -moz-transform: translate(0, 50px);
+  }
+  100% {
+    -moz-transform: translate(0, 70px);
+  }
+}
+@-o-keyframes leaf {
+  0% {
+    -o-transform: translate(0, 70px);
+  }
+  50% {
+    -o-transform: translate(0, 50px);
+  }
+  100% {
+    -o-transform: translate(0, 70px);
+  }
+}
+@keyframes leaf {
+  0% {
+    -webkit-transform: translate(0, 70px);
+    -moz-transform: translate(0, 70px);
+    -ms-transform: translate(0, 70px);
+    transform: translate(0, 70px);
+  }
+  50% {
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    -ms-transform: translate(0px);
+    transform: translate(0px);
+  }
+  100% {
+    -webkit-transform: translate(0, 70px);
+    -moz-transform: translate(0, 70px);
+    -ms-transform: translate(0, 70px);
+    transform: translate(0, 70px);
+  }
+}
+#border {
+  stroke: #59513c;
+}
+#Page {
+  fill: #59513c;
+}
+#notFound {
+  fill: #a7444b;
+}
+
+/* ----- LOGIN FORM ----- */
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+  position: relative;
+  margin-bottom: 15px;
+}
+.form-group i {
+  position: absolute;
+  right: 10px;
+  top: 70%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.label-login {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.label-login::after {
+  content: "*";
+  color: red;
+}
+.input-login {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-color: rgb(110, 87, 224);
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+.input-login:focus {
+  border-color: rgb(40, 91, 212);
+}
+.error {
+  color: red;
+  margin-block: 10px;
+  font-size: 12px;
+}
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(40, 91, 212);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+.btn-login:hover {
+  background-color: rgb(110, 87, 224);
+}
+
+/* ----- DASHBOARD ----- */
+.dashboard-container {
+  height: 100%;
+  padding: 5px;
+}
+.table-wrapper {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 13px;
+  border-bottom: 1px solid #ddd;
+}
+td {
+  border-bottom: none !important;
+}
+tr {
+  border-bottom: 1px solid #ddd;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 500px;
+  width: 100%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.modal form h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+}
+.modal form h2::after {
+  content: "*";
+  color: red;
+}
+.btn-submit {
+  margin-right: 10px;
+  padding: 5px 8px;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.btn-submit:hover {
+  border: 1px solid #101010;
+}
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-wrapper:nth-child(2) {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.modal-wrapper label {
+  font-size: 12px;
+}
+.modal-wrapper input,
+.modal-wrapper textarea {
+  padding: 8px;
+  border: 1px solid #101010;
+  outline: none;
+  font-size: 13px;
+}
+textarea {
+  resize: none;
+}
+.modal-wrapper-radio {
+  display: flex;
+  font-size: 12px;
+  text-transform: lowercase;
+  gap: 10px;
+}
